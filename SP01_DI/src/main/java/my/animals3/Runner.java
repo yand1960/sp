@@ -12,8 +12,13 @@ public class Runner {
                 MySpringConfiguration.class
         );
 
-        Animal animal = context.getBean("animal1",Animal.class);
-        animal.eat();
+//        Animal animal = context.getBean("animal1",Animal.class);
+//        animal.eat();
+        Process process1 = context.getBean("process1", Process.class);
+        process1.start();
+        Process process2 = context.getBean("process2", Process.class);
+        process2.start();
+
 
     }
 }
