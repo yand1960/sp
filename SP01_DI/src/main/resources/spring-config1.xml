@@ -6,10 +6,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--    <bean class="my.animals1.Cat" />-->
-    <bean class="my.animals1.Dog" id="animal"/>
-    <bean class="my.animals1.FeedProcess">
-        <property name="animal" ref="animal" />
+    <bean class="my.animals1.Cat" id="animal1"/>
+    <bean class="my.animals1.Dog" id="animal2"/>
+
+    <bean class="my.animals1.FeedProcess" id="process1">
+        <property name="animal" ref="animal2" />
+    </bean>
+
+    <bean class="my.animals1.WalkProcess" id="process2">
+            <property name="animal" ref="animal1" />
     </bean>
 
 
