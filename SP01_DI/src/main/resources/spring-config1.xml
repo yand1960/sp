@@ -14,7 +14,9 @@
     </bean>
 
     <bean class="my.animals1.WalkProcess" id="process2">
-            <property name="animal" ref="animal1" />
+        <constructor-arg name="animal">
+            <ref bean="animal1" />
+        </constructor-arg>
     </bean>
 
 
