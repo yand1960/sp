@@ -36,7 +36,7 @@ public class Vasya  implements Human{
     @Override
     public void feedPets() {
         for(var p:pets){
-            System.out.println(name + " feed one of his pets");
+            System.out.println(name + " feeds one of his pets...");
             p.eat();
         }
     }
