@@ -6,18 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="my.my.animals2.Cat" id="animal1"/>
-    <bean class="my.my.animals2.Dog" id="animal2"/>
 
-    <bean class="my.my.animals2.FeedProcess" id="process1">
-        <property name="animal" ref="animal2" />
-    </bean>
-
-    <bean class="my.my.animals2.WalkProcess" id="process2">
-        <constructor-arg name="animal">
-            <ref bean="animal1" />
-        </constructor-arg>
-    </bean>
-
+    <context:component-scan base-package="my.animals2" />
 
 </beans>
