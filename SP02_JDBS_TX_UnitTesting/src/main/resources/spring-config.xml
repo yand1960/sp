@@ -16,4 +16,6 @@
         <property name="password" value="northwind" />
     </bean>
 
+    <context:component-scan base-package="my.dal" />
+
 </beans>
