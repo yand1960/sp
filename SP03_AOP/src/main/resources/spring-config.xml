@@ -2,12 +2,24 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
 
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
     <context:component-scan base-package="my.aop.demo" />
+    <bean class="my.aop.demo.MyIntegrationAspect" id="myaspect1">
+        <constructor-arg name="file_path" value="C:\temp\aspectdata.txt" />
+    </bean>
+
+    <aop:aspectj-autoproxy>
+        <aop:include name="myaspect1" />
+    </aop:aspectj-autoproxy>
 
 
 </beans>
