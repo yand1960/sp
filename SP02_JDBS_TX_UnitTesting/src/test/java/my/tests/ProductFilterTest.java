@@ -10,7 +10,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 //@ContextConfiguration("classpath:spring-config.xml")
-@ContextConfiguration(classes = TestContextConfig.class)
+@ContextConfiguration(classes = TestContextConfig.class )
 public class ProductFilterTest {
 
     @Autowired

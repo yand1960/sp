@@ -5,8 +5,10 @@ import my.dal.Repository;
 import my.dal.RepositoryStub;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 
 @Configuration
+//@ImportResource("classpath:spring-config.xml") //так можно обеспечить комбинированную конфигурацию
 public class TestContextConfig {
 
     Repository repository;
