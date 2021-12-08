@@ -15,7 +15,7 @@ public class RepositoryJdbc implements Repository{
 
     @Override
     public List<Product> getProducts() {
-        String  sql = "SELECT ProductID, Name, ProductNumber, ListPrice " +
+        String  sql = "SELECT ProductID as id, Name, ProductNumber as code, ListPrice as price " +
                 "FROM Production.Product";
         List<Product> products = db.query(sql,
                 new BeanPropertyRowMapper<>(Product.class));
