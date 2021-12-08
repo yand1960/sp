@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="my.animals4.Cat" id="murka"/>
+    <bean class="my.animals4.Dog" id="sharik"/>
+    <bean class="my.animals4.Dog" id="bobik"/>
+
+<!--    <bean class="my.animals4.FeedProcess" id="feedAnimal">-->
+<!--        <property name="animal" ref="sharik" />-->
+<!--    </bean>-->
+
+<!--    <bean class="my.animals4.WalkProcess" id="walkAnimal">-->
+<!--        <constructor-arg name="animal">-->
+<!--            <ref bean="murka" />-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean class="my.animals4.Vasya" id="vasya">
+        <constructor-arg name="name" value="Vasya"/>
+        <constructor-arg name="pets">
+            <list>
+                <ref bean="murka" />
+                <ref bean="bobik" />
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean class="my.animals4.HumanFeedsPets">
+        <property name="human" ref="vasya" />
+    </bean>
+
+
+</beans>
