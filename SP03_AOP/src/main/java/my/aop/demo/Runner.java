@@ -10,6 +10,7 @@ public class Runner {
                 new ClassPathXmlApplicationContext("spring-config.xml");
         Calc calc = context.getBean(Calc.class);
         System.out.println(calc.plus(1.0,2.0));
+        System.out.println(calc.getClass().toString());
     }
 
 }
