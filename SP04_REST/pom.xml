@@ -39,7 +39,7 @@
                 <version>3.3.2</version>
                 <configuration>
                     <outputDirectory>
-                        E:\apache-tomcat-10.0.13\webapps
+                        E:\apache-tomcat-9.0.55\webapps
                     </outputDirectory>
                 </configuration>
             </plugin>

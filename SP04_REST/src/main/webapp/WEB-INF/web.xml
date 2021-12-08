@@ -8,9 +8,9 @@
     <!--    Этот сервлет ожидает, что конфигурация контекста находится
         в файлe WEB-INF/mvc-dispatcher-servlet.xml -->
     <servlet>
-        <servlet-name>mvc-dispatcher</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
+         <servlet-name>mvc-dispatcher</servlet-name>
+         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
