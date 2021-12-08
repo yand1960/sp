@@ -15,7 +15,8 @@
 
     <!-- Expressions are related to words like "hasRole()", hasAnyRole()", "and" , "or" and etc.  -->
     <security:http use-expressions="true" >
-        <security:intercept-url pattern="/count" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')" />
+        <security:intercept-url pattern="/time
+" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')" />
         <!-- 		<security:intercept-url pattern="/restricted" access="hasRole('ROLE_ADMIN')"/> -->
         <security:form-login login-page="/login.html"
                              login-processing-url="/perform-login"
