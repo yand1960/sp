@@ -44,34 +44,6 @@ public class MyConfiguration {
 
     @Bean
     public  Process process() {
-        return process();
+        return process;
     }
 }
-
-
-/*
-<bean class="my.spring.di3.Cat" id="murka"/>
-    <bean class="my.spring.di3.Dog" id="bobik"/>
-    <bean class="my.spring.di3.Cat" id="barsik"/>
-    <bean class="my.spring.di3.Dog" id="sharik"/>
-    <bean class="my.spring.di3.Cat" id="blacky"/>
-
-    <bean class="my.spring.di3.Vasya" id="vasya">
-        <property name="name" value="Vasya"/>
-        <constructor-arg name="pets">
-            <list>
-                <ref bean="murka"/>
-                <ref bean="bobik"/>
-            </list>
-        </constructor-arg>
-    </bean>
-
-    <bean class="my.spring.di3.PeopleFeedPets">
-        <constructor-arg name="people">
-            <list>
-                <ref bean="vasya"/>
-            </list>
-        </constructor-arg>
-    </bean>
-
- */
