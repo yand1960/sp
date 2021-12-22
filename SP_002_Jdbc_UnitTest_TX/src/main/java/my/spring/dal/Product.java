@@ -7,6 +7,15 @@ public class Product {
     private String productNumber;
     private Double listPrice;
 
+    public Product(){}
+
+    public Product(int id, String name, String code, Double price) {
+        this.productID = id;
+        this.name = name;
+        this.productNumber = code;
+        this.listPrice = price;
+    }
+
     public int getProductID() {
         return productID;
     }

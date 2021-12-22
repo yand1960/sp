@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+//@Component
 public class RepositoryJdbc implements Repository{
 
     @Autowired
@@ -15,7 +15,7 @@ public class RepositoryJdbc implements Repository{
 
     @Override
     public List<Product> getProducts() {
-        String sql = "SELECT ProductID, Name, ProductName, ListPrice FROM Production.Product";
+        String sql = "SELECT ProductID, Name, ProductNumber, ListPrice FROM Production.Product";
         return db.query(sql, new BeanPropertyRowMapper<>(Product.class));
     }
 }
