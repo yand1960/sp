@@ -9,7 +9,8 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
+@Component  //Есть еще @Service, @Repository
+
 @PropertySource("classpath:app.properties")
 public class RepositoryRest implements Repository{
     String url = "/products.aspx";

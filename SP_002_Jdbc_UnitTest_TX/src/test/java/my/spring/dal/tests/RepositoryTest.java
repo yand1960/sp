@@ -12,6 +12,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration("classpath:spring-config-jdbc.xml")
 //@ContextConfiguration("classpath:spring-config-rest.xml")
+
 //@ContextConfiguration("classpath:spring-config-stub.xml")
 public class RepositoryTest {
 

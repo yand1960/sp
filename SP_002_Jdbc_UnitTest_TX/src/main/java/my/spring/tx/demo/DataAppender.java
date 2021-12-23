@@ -14,4 +14,5 @@ public class DataAppender {
         var sql = "insert into junk (data) values (?)";
         db.update(sql, data);
     }
+
 }
