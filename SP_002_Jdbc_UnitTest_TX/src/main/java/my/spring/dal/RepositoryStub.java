@@ -1,8 +1,11 @@
 package my.spring.dal;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class RepositoryStub implements Repository{
     @Override
     public List<Product> getProducts() {

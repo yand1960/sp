@@ -11,8 +11,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 //Эти аннотации обеспечивают работу теста в контексте спринга
 @ExtendWith(SpringExtension.class)
 //@ContextConfiguration("classpath:spring-config-jdbc.xml")
-//@ContextConfiguration("classpath:spring-config-rest.xml")
-@ContextConfiguration("classpath:spring-config-stub.xml")
+@ContextConfiguration("classpath:spring-config-rest.xml")
+//@ContextConfiguration("classpath:spring-config-stub.xml")
 public class RepositoryTest {
 
     @Autowired
