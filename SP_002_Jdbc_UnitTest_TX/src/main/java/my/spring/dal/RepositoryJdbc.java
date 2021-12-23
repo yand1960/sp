@@ -7,8 +7,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-//@Component
+@Component
 public class RepositoryJdbc implements Repository{
+
+    //Чтобы была возможность использовать этот клас вне контекста
+    //Можно инжектировать через контруктор или через сеттер
 
     @Autowired
     JdbcTemplate db;
