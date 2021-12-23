@@ -10,6 +10,9 @@ public class MultiAppender {
     @Autowired
     DataAppender appender;
 
+    // Аннотация @Transactional управляет границами (потоком)
+    // трансакции в стеке вызовов
+    // см. также spring-config-tx-demo.xml
     @Transactional
     public void append3() {
         appender.append("YA1");
