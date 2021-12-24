@@ -7,5 +7,6 @@ public class Runner {
         var context = new ClassPathXmlApplicationContext("spring-config.xml");
         Calc calc = context.getBean(Calc.class);
         System.out.println("Result: " + calc.plus(1,2));
+        System.out.println("Result: " + calc.minus(1,2));
     }
 }
