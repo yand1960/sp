@@ -17,7 +17,7 @@ public class FilterProductTests {
 
     @Test
     public void getProductsByFirstLettersTest() {
-        var result = filter.getProductsByFirstLetters("la");
-        Assertions.assertEquals(4, result.size());
+        var result = filter.getProductsByFirstLetters("a");
+        Assertions.assertEquals(3, result.size());
     }
 }
