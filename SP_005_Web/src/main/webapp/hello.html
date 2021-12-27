@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <script>
+        function getTime() {
+            var url = "api/time";
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET",url,false);
+            xhr.send();
+            var result = xhr.responseText;
+            document.getElementById("display").innerText = result;
+        }
+    </script>
 </head>
 <body>
-    <h1>Спасибо, Мавен!</h1>
+    <h1 id="display">Спасибо, Мавен!</h1>
+    <button onclick="getTime();">Сколько времени?</button>
 </body>
 </html>
