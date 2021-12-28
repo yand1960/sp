@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>Products</title>
     <script>
-        function getTime() {
-            document.getElementById("display").innerText = "Wait...";
-            var url = "api/time";
+        function getProducts() {
+            var url = "api/products?letters="
+                    + document.getElementById("letters").value;
             var xhr = new XMLHttpRequest();
             xhr.open("GET",url);
             xhr.onload = () => {
@@ -14,13 +14,12 @@
                 document.getElementById("display").innerText = result;
             };
             xhr.send();
-
         }
     </script>
 </head>
 <body>
-    <h1 id="display">Спасибо, Мавен!</h1>
-    <button onclick="getTime();">Сколько времени?</button> <br />
-    <textarea></textarea>
+    <h1>AW Products</h1>
+    <input id="letters" onkeyup="getProducts();" />
+    <div id="display"></div>
 </body>
 </html>
