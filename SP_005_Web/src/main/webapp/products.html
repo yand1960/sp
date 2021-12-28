@@ -10,8 +10,15 @@
             var xhr = new XMLHttpRequest();
             xhr.open("GET",url);
             xhr.onload = () => {
-                var result = xhr.responseText;
-                document.getElementById("display").innerText = result;
+                var text = xhr.responseText;
+                //document.getElementById("display").innerText = text;
+                var products = JSON.parse(text);
+                var out = "";
+                for(let i=0; i < products.length; i++) {
+                    let p = products[i];
+                    out += p.name + "<br />";
+                }
+                document.getElementById("display").innerHTML = out;
             };
             xhr.send();
         }

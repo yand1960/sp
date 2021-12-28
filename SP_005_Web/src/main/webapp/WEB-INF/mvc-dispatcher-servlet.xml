@@ -33,5 +33,15 @@
 
     <context:annotation-config />
 
+
+    <context:component-scan base-package="my.spring.mvc" />
+
+    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/templates/" />
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="suffix" value=".ftl" />
+    </bean>
 </beans>
 
