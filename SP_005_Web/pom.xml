@@ -22,15 +22,6 @@
             <version>5.3.14</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/javax/javaee-web-api -->
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>8.0.1</version>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>my.spring</groupId>
             <artifactId>logics</artifactId>

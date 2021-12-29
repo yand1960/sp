@@ -8,7 +8,7 @@
         <h1>Products MVC</h1>
         <table border="1">
 
-            <!-- Специфический код движка шаблонов Free Marker -->
+            <!-- Специфический код движка шаблонов Free Marker: -->
 
             <#list products as p>
                 <tr>
